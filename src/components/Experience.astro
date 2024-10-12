@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Enero 2024",
+    company: "Innovance",
+    title: "Profesor de programación",
+    description:
+      "Fui responsable de la creación y entrega de un curso de programación inicial de 10 clases, diseñado específicamente para estudiantes de económicas. Desarrollé el plan de estudio, grabé las clases y preparé ejercicios prácticos para enseñar los principios fundamentales de la programación utilizando Python, junto a una introducción al análisis de datos. ",
+  },
+  {
+    date: "Enero 2020",
+    company: "Personal",
+    title: "Profesor de matemática y programación",
+    description:
+      "Enseñé fundamentos de la programación, además de dar clases particulares de matemática (principalmente análisis, discreta y álgebra) a alumnos de UNLaM, UBA y UTN.",
+  },
+  {
+    date: "Julio 2016",
+    company: "Radixar",
+    title: "Pasantía escolar",
+    description:
+      "Llevé a cabo distintas tareas de maquetado y diseño web. También me encargué de algunas tareas de FrontEnd con JavaScript.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
