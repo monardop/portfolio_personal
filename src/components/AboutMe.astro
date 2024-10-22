@@ -1,0 +1,49 @@
+---
+import SlotPill from "./SlotPill.astro";
+import ImageComponent from "./ImageComponent.astro";
+
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import MailIcon from "./icons/Mail.astro";
+---
+
+<div class="flex row-auto w-auto items-center gap-5">
+  <ImageComponent 
+  src="http://imgfz.com/i/cuAZUjP.jpeg"
+    alt="Logo"
+    class="size-20 rounded-full"
+  />
+
+  <h1
+    class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
+  >
+    <span
+      class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+    >
+      Pablo Monardo<br />
+    </span>Ingeniería Informática
+  </h1>
+</div>
+
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+  Apasionado por la tecnología y la innovación, con experiencia en multimedia y
+  educación. Actualmente, me encuentro desarrollando mis habilidades en
+  programación y desarrollo de software, mientras exploro nuevas áreas para
+  seguir creciendo profesionalmente. Siempre abierto a nuevos desafíos y
+  oportunidades.
+</p>
+
+<nav class="flex gap-4 mt-8 flex-wrap">
+  <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
+    LinkedIn
+    <LinkedInIcon class="size-6" />
+  </SlotPill>
+  <SlotPill href="https://www.github.com/monardop">
+    GitHub
+    <GitHubIcon class="size-6" />
+  </SlotPill>
+  <SlotPill href="mailto:pablomonardo@gmail.com">
+    pablomonardo@gmail.com
+    <MailIcon class="size-6" />
+  </SlotPill>
+</nav>
