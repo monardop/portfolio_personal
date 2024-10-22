@@ -1,0 +1,66 @@
+---
+import Badge from "./Badge.astro";
+import SlotPill from "./SlotPill.astro";
+import ImageComponent from "./ImageComponent.astro";
+
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import MailIcon from "./icons/Mail.astro";
+---
+
+<div
+  id="profileView">
+  <div class="flex-col items-center my-auto">
+    <ImageComponent
+      class="size-30 rounded-full my-5"
+      src="https://avatars.githubusercontent.com/u/78887322?v=4"
+      alt="Profile"
+    />
+
+    <h2 class="text-2xl text-center my-3">
+      Pablo Monardo
+      <a
+        href="https://www.linkedin.com/in/pablo-nicolas-monardo/"
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center"
+      >
+        <Badge> Disponible para trabajar</Badge>
+      </a>
+    </h2>
+  </div>
+  <div class="flex gap-4 mt-8 flex-wrap">
+    <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
+      <LinkedInIcon class="size-6" />
+      in/pablo-nicolas-monardo
+    </SlotPill>
+
+    <SlotPill href="https://www.github.com/monardop">
+      <GitHubIcon class="size-6" />
+      /monardop
+    </SlotPill>
+
+    <SlotPill href="mailto:pablomonardo@gmail.com">
+      <MailIcon class="size-6" />
+      pablomonardo@gmail.com
+    </SlotPill>
+  </div>
+</div>
+
+<style>
+  #profileView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 975px) {
+    #profileView {
+      display: none;
+    }
+  }
+</style>
