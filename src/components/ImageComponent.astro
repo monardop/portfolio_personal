@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+
+---
+
+<Image 
+  src={Astro.props.src} 
+  alt={Astro.props.src} 
+  format="jpg" 
+  width={300} 
+  height={300} 
+  class={Astro.props.class}
+/>
