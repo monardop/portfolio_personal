@@ -5,6 +5,8 @@ import ExperienceIcon from "../components/icons/Experience.astro";
 import Experience from "../components/Experience.astro";
 import AboutMe from "../components/AboutMe.astro";
 import ProfileView from "../components/ProfileView.astro";
+import CardsSlider from "../components/CardsSlider.astro";
+import ProjectsPresentation from "../components/ProjectsPresentation.astro"
 ---
 
 <Layout title="Pablo Monardo | Portfolio">
@@ -14,11 +16,15 @@ import ProfileView from "../components/ProfileView.astro";
       <AboutMe />
     </SectionContainer>
     <SectionContainer>
-      <h2 class="flex row-auto gap-10 items-center text-2xl font-bold">
+      <h2 class="flex row-auto gap-10 items-center text-4xl font-bold dark:text-white">
         <ExperienceIcon class="size-6" />
         Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer>
+    <SectionContainer>
+      <ProjectsPresentation/>
+      <CardsSlider />
     </SectionContainer>
   </main>
 </Layout>
@@ -28,13 +34,12 @@ import ProfileView from "../components/ProfileView.astro";
     margin-left: 30dvw;
     margin-top: 10px;
     width: 60dvw;
-  }  
-  
+  }
+
   @media (max-width: 975px) {
     main {
-    margin:auto;
-    width: 80dvw;
+      margin: auto;
+      width: 80dvw;
+    }
   }
-}
-
 </style>
