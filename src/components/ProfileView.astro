@@ -8,27 +8,22 @@ import GitHubIcon from "./icons/GitHub.astro";
 import MailIcon from "./icons/Mail.astro";
 ---
 
-<div
-  id="profileView">
-  <div class="flex-col items-center my-auto">
+<div id="profileView">
+  <div class="w-full items-center">
     <ImageComponent
-      class="size-30 rounded-full my-5"
+      class="size-30 rounded-full mx-auto"
       src="https://avatars.githubusercontent.com/u/78887322?v=4"
       alt="Profile"
-    />
+      />
 
-    <h2 class="text-2xl my-3 ">
-      Pablo Monardo
-      <a
-        href="https://www.linkedin.com/in/pablo-nicolas-monardo/"
-        target="_blank"
-        rel="noopener"
-        class="flex"
-      >
-        <Badge> Disponible para trabajar</Badge>
-      </a>
-    </h2>
   </div>
+    <h2 class="text-4xl my-3 text-center">
+        Pablo Monardo
+    </h2>
+    <div class="text-center">
+      <Badge> Disponible para trabajar</Badge>
+    </div>
+
   <div class="flex gap-4 mt-8 flex-wrap">
     <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
       <LinkedInIcon class="size-6" />
