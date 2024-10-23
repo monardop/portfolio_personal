@@ -1,44 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GitHubIcon from "../components/icons/GitHub.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import Card from "../components/Card.astro";
-import Badge from "../components/Badge.astro";
-import SlotPill from "../components/SlotPill.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ExperienceIcon from "../components/icons/Experience.astro";
+import Experience from "../components/Experience.astro";
+import AboutMe from "../components/AboutMe.astro";
+import ProfileView from "../components/ProfileView.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Pablo Monardo | Portfolio">
+  <ProfileView />
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
-      <h1
-        class="text-white text-5xl font-bold flex justify-center flex row gap-x-4 pb-4"
-      >
-        ¡Buenos días! Soy Pablo
-        <a
-          href="https://www.linkedin.com/in/pablo-nicolas-monardo/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge> Disonible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2 class="text-xl text-wrap">
-        <span> Futuro ingeniero Informático. </span>
-        <span class="opacity-60">
-          Técnico en multimedia, profe y veremos qué más
-        </span>
+    <SectionContainer>
+      <AboutMe />
+    </SectionContainer>
+    <SectionContainer>
+      <h2 class="flex row-auto gap-10 items-center text-2xl font-bold">
+        <ExperienceIcon class="size-6" />
+        Experiencia laboral
       </h2>
-      <nav class="flex gap-x-2">
-        <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
-          LinkedIn
-          <LinkedInIcon class="w-6 h-6" />
-        </SlotPill>
-        <SlotPill href="https://www.github.com/monardop">
-          GitHub
-          <GitHubIcon class="w-6 h-6" />
-        </SlotPill>
-      </nav>
-    </section>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>
+
+<style>
+  main {
+    margin-left: 30dvw;
+    margin-top: 10px;
+    width: 60dvw;
+  }  
+  
+  @media (max-width: 975px) {
+    main {
+    margin:auto;
+    width: 80dvw;
+  }
+}
+
+</style>
