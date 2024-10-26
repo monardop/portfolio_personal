@@ -6,13 +6,15 @@ import ImageComponent from "./ImageComponent.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import MailIcon from "./icons/Mail.astro";
+
+import profPicture from '../../public/profile.jpg';
 ---
 
 <div id="profileView">
   <div class="w-full items-center">
     <ImageComponent
       class="size-30 rounded-full mx-auto"
-      src="https://avatars.githubusercontent.com/u/78887322?v=4"
+      src={profPicture}
       alt="Profile"
       />
 
