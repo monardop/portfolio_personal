@@ -37,13 +37,21 @@ const PROJECTS = [
     description:
       "En este repositorio puede encontrar análisis de datos de disntintas fuentes; hechos con Pandas, Numpy y matplotlib.",
   },
+  {
+    title: "Web bienes raíces",
+    link: "https://bienes-raices-pm.netlify.app/",
+    technology: "JS | HTML | CSS",
+    description:
+      "Creé una páagina web donde se presentan casas para venta y alquiler. En este proyecto, usé JavaScript y CSS de manera pura, sin frameworks ni librerías externas.",
+  },
 ];
 ---
 
-<script
+<script 
   src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
 ></script>
-<swiper-container slides-per-view="2" speed="500" loop="true">
+
+<swiper-container slides-per-view="2" speed="500" loop="true"  pagination="true">
   {
     PROJECTS.map((project) => (
       <swiper-slide>
