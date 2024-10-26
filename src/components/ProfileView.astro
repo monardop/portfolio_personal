@@ -11,36 +11,38 @@ import profPicture from '../../public/profile.jpg';
 ---
 
 <div id="profileView">
-  <div class="w-full items-center">
-    <ImageComponent
-      class="size-30 rounded-full mx-auto"
-      src={profPicture}
-      alt="Profile"
-      />
-
-  </div>
-    <h2 class="text-4xl my-3 text-center">
-        Pablo Monardo
+  <div class="h-4/5 my-10">
+    <div class="w-full items-center">
+      <ImageComponent
+        class="size-9/12 rounded-full mx-auto"
+        src={profPicture}
+        alt="Profile"
+        />
+    </div>
+  
+    <h2 class="text-4xl font-bold my-3 text-center">
+      Pablo Monardo
     </h2>
     <div class="text-center">
       <Badge> Disponible para trabajar</Badge>
     </div>
-
-  <div class="flex gap-4 mt-8 flex-wrap">
-    <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
-      <LinkedInIcon class="size-6" />
-      in/pablo-nicolas-monardo
-    </SlotPill>
-
-    <SlotPill href="https://www.github.com/monardop">
-      <GitHubIcon class="size-6" />
-      /monardop
-    </SlotPill>
-
-    <SlotPill href="mailto:pablomonardo@gmail.com">
-      <MailIcon class="size-6" />
-      pablomonardo@gmail.com
-    </SlotPill>
+  
+    <div class="flex flex-col gap-4 my-10">
+      <SlotPill href="https://www.linkedin.com/in/pablo-nicolas-monardo/">
+        <LinkedInIcon class="size-6" />
+        in/pablo-nicolas-monardo
+      </SlotPill>
+  
+      <SlotPill href="https://www.github.com/monardop">
+        <GitHubIcon class="size-6" />
+        /monardop
+      </SlotPill>
+  
+      <SlotPill href="mailto:pablomonardo@gmail.com">
+        <MailIcon class="size-6" />
+        pablomonardo@gmail.com
+      </SlotPill>
+    </div>
   </div>
 </div>
 
