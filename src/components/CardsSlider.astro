@@ -3,6 +3,20 @@ import Card from "./Card.astro";
 
 const PROJECTS = [
   {
+    title: "Gestión Supermercado",
+    link: "https://github.com/monardop/cadena-supermercado",
+    technology: "T-SQL",
+    description:
+      "Esta app fue realizada en colaboración con 3 compañeros como proyecto de universidad. Se trata de una aplicación netamente en SQL Server que permite importar archivos, generar reportes, cargar ventas y nuevos clientes. También tiene una sección de seguridad donde se encriptan datos importantes y se gestionan usuarios y permisos.",
+  },
+  {
+    title: "App para gestionar la carrera",
+    link: "https://github.com/monardop/gestionIngenieria",
+    technology: "T-SQL",
+    description:
+      "App express donde diseñé una base de datos con las materias de la carrera Ingeniería Informática. La idea de este proyecto fue practicar el uso de stored procedures, gestión de vistas e información relevante. Tiene la documentación necesaria para que cualquiera que curse en la misma universidad pueda descargarla y utilizarla.",
+  },
+  {
     title: "Quien quiere C millonario",
     link: "https://github.com/monardop/Quien_quiere_C_Millonario",
     technology: "C, cURL",
@@ -10,7 +24,7 @@ const PROJECTS = [
       "Desarrollé un juego de preguntas y respuestas en C que consume una API externa para obtener contenido dinámico. Utilizando cURL, el programa realiza solicitudes a la API, procesa la información recibida y presenta las preguntas de manera aleatoria. Este proyecto me permitió profundizar en el manejo de peticiones HTTP, el parseo de JSON y la implementación de estructuras de datos eficientes para almacenar y gestionar la información obtenida.",
   },
   {
-    title: "Decodificación de Datos Binarios",
+    title: "Decodificación",
     link: "https://github.com/monardop/TopicosFacultad/tree/main/Trabajo%20Pr%C3%A1ctico",
     technology: "C",
     description:
@@ -33,7 +47,7 @@ const PROJECTS = [
   {
     title: "Análisis de datos",
     link: "https://github.com/monardop/Jupyter-Practice",
-    technology: "Python | Jupyter | Google Colab",
+    technology: "Python | Jupyter",
     description:
       "En este repositorio puede encontrar análisis de datos de disntintas fuentes; hechos con Pandas, Numpy y matplotlib.",
   },
@@ -47,10 +61,11 @@ const PROJECTS = [
 ];
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
-</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+></script>
 
-<swiper-container slides-per-view="2" speed="500" loop="true"  pagination="true">
+<swiper-container slides-per-view="2" speed="500" loop="true" pagination="true">
   {
     PROJECTS.map((project) => (
       <swiper-slide>
