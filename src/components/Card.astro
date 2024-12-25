@@ -10,23 +10,30 @@ const { title, technology, description, link } = Astro.props;
 ---
 
 <div class="m-auto">
-  <a href={link}
-    class="block h-[400px] 
-           max-w-sm p-6 
-           bg-white border border-gray-200 rounded-lg shadow 
+  <a
+    href={link}
+    class="block h-[400px]
+           max-w-sm p-6
+           bg-white border border-gray-200 rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
     target="_blank"
     rel="noopener noreferrer"
     id="cardBox"
   >
-    <h3 class="text-xl font-bold sm:text-base text-slate-900 dark:text-white mt-5" id="pTitle">
+    <h3
+      class="text-xl font-bold sm:text-base text-slate-900 dark:text-white mt-5"
+      id="pTitle"
+    >
       {title}
     </h3>
-    <h5 class="my-4 text-lg sm:text-xs text-gray-500" id="pTech">
+    <h5 class="my-4 text-lg sm:text-xs" id="pTech">
       {technology}
     </h5>
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-    <p class="mb-4 text-lg sm:text-sm font-normal text-gray-500 dark:text-gray-400" id="pDescription">
+    <p
+      class="mb-4 text-lg sm:text-sm font-normal text-gray-500 dark:text-gray-400"
+      id="pDescription"
+    >
       {description}
     </p>
   </a>
@@ -34,8 +41,9 @@ const { title, technology, description, link } = Astro.props;
 
 <style>
   @media (max-width: 768px) {
-    hr, #pDescription {
-      display: none; 
+    hr,
+    #pDescription {
+      display: none;
     }
     #cardBox {
       height: 200px;
@@ -47,8 +55,8 @@ const { title, technology, description, link } = Astro.props;
       font-size: small;
       font-weight: 600;
     }
-    #pTech{
-      font-size:x-small;
+    #pTech {
+      font-size: x-small;
     }
   }
 </style>
