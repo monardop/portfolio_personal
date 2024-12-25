@@ -15,7 +15,7 @@ const { title } = Astro.props;
       content="Portfolio de Pablo Monardo. Estudiante de Ingeniería Informática, técnico en multimedia y profesor. Programador y Desarrollador Web"
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="" href="../../public/logo.ico" />
+    <link rel="icon" type="" href="/logo.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -25,8 +25,8 @@ const { title } = Astro.props;
         bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
         dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
-  </div>
-  <slot />
+    </div>
+    <slot />
 
     <style is:global>
       :root {
@@ -45,7 +45,7 @@ const { title } = Astro.props;
         min-height: 100vh;
         overscroll-behavior: none;
       }
-      
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
