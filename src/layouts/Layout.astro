@@ -10,14 +10,40 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Portfolio de Pablo Monardo. Estudiante de Ingeniería Informática, técnico en multimedia y profesor. Programador y Desarrollador Web"
-    />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Pablo Monardo" />
+    <meta name="language" content="es" />
     <link rel="icon" type="" href="/logo.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta
+      name="description"
+      content="Soy Pablo Monardo, desarrollador frontend especializado en React y Next.js. Descubre mis proyectos y habilidades en mi portfolio."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador frontend, React, Next.js, JavaScript, portfolio, Pablo Monardo"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Pablo Monardo | Portfolio" />
+    <meta
+      property="og:description"
+      content="Explora mis proyectos como desarrollador frontend especializado en React y Next.js."
+    />
+    <meta
+      property="og:image"
+      content="https://pablo-monardo-portfolio.netlify.app/preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://pablo-monardo-portfolio.netlify.app/"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="theme-color" content="#232323" />
+    <link rel="canonical" href="https://pablo-monardo-portfolio.netlify.app/" />
   </head>
   <body class="relative text-black dark:text-white">
     <div
