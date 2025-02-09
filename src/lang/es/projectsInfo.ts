@@ -27,10 +27,10 @@ export const proyectos = {
       {
         titulo: "Portfolio",
         url: "https://pablo-monardo-portfolio.netlify.app/",
-        tecnologiasUsadas: ["Astro", "JavaScript", "Tailwind"],
+        tecnologiasUsadas: ["Astro", "JavaScript", "Tailwind", "GitHub"],
         descripcion: "Este portfolio es mi espacio de experimentación y aprendizaje en el desarrollo web. Aquí encontrarás proyectos que reflejan mi evolución en mi profesión.",
         fecha: "2024/2025",
-        tags: ["Desarrollo Web", "Diseño Responsivo", "CSS"],
+        tags: ["Desarrollo Web", "Diseño Responsivo", "Optimización", "Responsive Design"],
       },
       {
         titulo: "Web bienes raíces",
